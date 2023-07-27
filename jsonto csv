@@ -1,1 +1,6 @@
-
+data = response.json()
+dataarr=[]
+for x in data['weather']:
+    listing=[x['description']]
+    dataarr.append(listing)
+    print(dataarr)
