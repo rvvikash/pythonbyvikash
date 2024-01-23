@@ -1,3 +1,10 @@
+a decorator is a special type of function that is used to modify the behavior of another function or method.
+Decorators provide a convenient syntax for applying transformations or 
+adding functionality to functions without modifying their actual code
+decorator is a function that take anouther function as an argument and return a function.
+
+
+
 # Simple decorator function
 def my_decorator(func):
     def wrapper():
