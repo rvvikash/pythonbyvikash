@@ -4,6 +4,21 @@ adding functionality to existing functions without modifying their actual code
 decorator is a function that take anouther function as an argument and return a function.
 
 
+def decorator(addition):
+    def multiply(a,b):
+        d=a*b
+        print(d)
+        addition(a,b)
+    return multiply   
+
+@decorator
+def addition(a,b):
+    c=a+b
+    print(c)
+# addition=decorator(addition)    
+addition(4,6)    
+
+
    ((( def decorator(printer):# we are creating the decoartor and passing the existing functionality as arugment 
     def inner():# adding other function which want to modify some using eisting functionality
         printer() #just we are calling the existing function
