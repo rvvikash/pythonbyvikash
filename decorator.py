@@ -4,6 +4,21 @@ adding functionality to functions without modifying their actual code
 decorator is a function that take anouther function as an argument and return a function.
 
 
+   ((( def decorator(printer):# we are creating the decoartor and passing the existing functionality as arugment 
+    def inner():# adding other function which want to modify some using eisting functionality
+        printer() #just we are calling the existing function
+        print('second name vikash')# just after the calling existing function we are adding the additional functionality
+    return inner
+
+
+@decorator   #it behave as printer=decorator(printer) so if we declaring using @ we can ignore this and we are not so we can declare this
+def printer():
+    print('first name golu')
+# printer=decorator(printer)
+printer() #calling decorated function in always important 
+# printer()    )))
+
+
 
 # Simple decorator function
 def my_decorator(func):
