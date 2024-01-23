@@ -11,7 +11,7 @@ decorator is a function that take anouther function as an argument and return a 
     return inner
 
 
-@decorator   #it behave as printer=decorator(printer) so if we declaring using @ we can ignore this and we are not so we can declare this
+@decorator   #it behave as printer=decorator(printer) so if we declaring using @ we can ignore this and if we are not so we can declare this
 def printer():
     print('first name golu')
 # printer=decorator(printer)
