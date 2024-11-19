@@ -20,3 +20,7 @@ WHERE salary < 10000;
 # #Output: a2c2b2c3d1a4d3e1
 
 sort the list in python
+
+# Input: "bojja"
+# Ouput : 11221
+
